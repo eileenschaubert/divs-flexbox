@@ -106,7 +106,7 @@ body {
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .wrapper {
@@ -116,12 +116,19 @@ body {
   justify-content: space-between;
 }
 
+.intro {
+  flex-direction: column;
+  padding: 1%;
+}
+
+
+/* issues with wrapping at phone size; text overlaps */
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
+  color: #000;
   line-height: 1.2em;
   font-size: 1.2em;
-  height: 300px;
+  /* height: 300px; */
   display: flex;
   width: 30%;
   justify-content: center;
@@ -129,7 +136,18 @@ body {
   padding: 1%;
 }
 
+.div-1, .div-2 {
+  border-right: solid 1px black;
+}
 
+
+footer {
+  display: flex;
+}
+
+.social {
+  padding: 1em 1%;
+}
 
 
 /* ==========================================================================
